@@ -25,7 +25,7 @@ class App extends React.Component {
                         <Home 
                             title="User Information"
                             user_name={user_info.user_name}
-                            user_age={user_info.user_age}
+                            initial_user_age={user_info.user_age}
                             user_job_title={user_info.user_job_title}
                             user_info={user_info}
                         >
