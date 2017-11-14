@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export default class Home extends React.Component {
     render(){
@@ -25,4 +26,11 @@ export default class Home extends React.Component {
             </div>
         );
     }
+}
+
+Home.propTypes = {
+    user_name: PropTypes.string,
+    user_age: PropTypes.number,
+    user_job_title: PropTypes.string,
+    user_hobbies: PropTypes.string
 }
