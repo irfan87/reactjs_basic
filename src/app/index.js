@@ -9,7 +9,7 @@ class App extends React.Component {
             user_name: "Ahmad Irfan Mohammad Shukri",
             user_age: 30,
             user_job_title: "Fullstack Web Developer",
-            user_hobbies: ["playing guitar", "watch movies", "playing games"]
+            user_hobbies: ["playing guitar", "watch movies", "playing mobile games", "hacking"]
         };
 
         return(

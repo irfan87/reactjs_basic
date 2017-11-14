@@ -2,7 +2,6 @@ import React from 'react';
 
 export default class Home extends React.Component {
     render(){
-        console.log(this.props);
         return(
             <div>
                 <h2>{this.props.title}</h2>
@@ -19,7 +18,7 @@ export default class Home extends React.Component {
                     <div>
                         <strong>Hobbies:</strong>
                         <ul>
-                            {this.props.user_info.user_hobbies.map((user_hobby) => <li>{user_hobby}</li>)}
+                            {this.props.user_info.user_hobbies.map((user_hobby, index) => <li key={index}>{user_hobby}</li>)}
                         </ul>
                     </div>
                 </div>
