@@ -14,7 +14,14 @@ class App extends React.Component {
                 </div>
                 <div className="row">
                     <div className="col-xs-10 col-xs-offset-1">
-                        <Home />
+                        <Home 
+                            title="User Information"
+                            user_name="Ahmad Irfan Mohammad Shukri"
+                            user_age="30"
+                            user_address="Kota Bharu, Kelantan, MY"
+                            user_job_title="Fullstack Web Developer"
+                            user_email="irfanshukri203@gmail.com"
+                        />
                     </div>
                 </div>
             </div>
