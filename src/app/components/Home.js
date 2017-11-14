@@ -6,8 +6,7 @@ export default class Home extends React.Component {
         super();
 
         this.state = {
-            user_age: props.initial_user_age,
-            status: 0
+            user_age: props.initial_user_age
         };
     }
 
@@ -42,10 +41,6 @@ export default class Home extends React.Component {
                         <ul>
                             {this.props.user_info.user_hobbies.map((user_hobby, index) => <li key={index}>{user_hobby}</li>)}
                         </ul>
-                    </div>
-                    <div>
-                        <strong>Status:</strong>
-                        {this.state.status}
                     </div>
                     <div>
                         <button onClick={() => this.onMakeOlder()} className="btn btn-primary btn-lg">Make me older!</button>
