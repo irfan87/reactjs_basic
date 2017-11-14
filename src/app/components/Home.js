@@ -2,6 +2,7 @@ import React from 'react';
 
 export default class Home extends React.Component {
     render(){
+        console.log(this.props);
         return(
             <div>
                 <h2>{this.props.title}</h2>
@@ -13,14 +14,14 @@ export default class Home extends React.Component {
                         <strong>Age:</strong> {this.props.user_age}
                     </p>
                     <p>
-                        <strong>Address:</strong> {this.props.user_address}
+                        <strong>Job:</strong> {this.props.user_job_title}
                     </p>
-                    <p>
-                        <strong>Job Title:</strong> {this.props.user_job_title}
-                    </p>
-                    <p>
-                        <strong>Email Address:</strong> {this.props.user_email}
-                    </p>
+                    <div>
+                        <strong>Hobbies:</strong>
+                        <ul>
+                            {this.props.user_info.user_hobbies.map((user_hobby) => <li>{user_hobby}</li>)}
+                        </ul>
+                    </div>
                 </div>
             </div>
         );
