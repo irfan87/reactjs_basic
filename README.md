@@ -1,6 +1,6 @@
 # reactjs_basic
 
-To use this tutorial, don't forget to install by command `npm install` or `npm i` the packages from package.json.
+To use this tutorial, don't forget to install by using `npm install` or `npm i` the packages from package.json.
 
 Then run `npm start` and forward `localhost:8080` to the browser. 
 
