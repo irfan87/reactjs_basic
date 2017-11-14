@@ -5,6 +5,10 @@ import {Header} from './components/Header';
 import Home from './components/Home';
 
 class App extends React.Component {
+    onGreet(){
+        alert("hello there!");
+    }
+
     render(){
         let user_info = {
             user_name: "Ahmad Irfan Mohammad Shukri",
@@ -28,6 +32,7 @@ class App extends React.Component {
                             initial_user_age={user_info.user_age}
                             user_job_title={user_info.user_job_title}
                             user_info={user_info}
+                            greet={this.onGreet}
                         >
                             <p>This is the Home paragraph!</p>
                         </Home>

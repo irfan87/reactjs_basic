@@ -48,6 +48,8 @@ export default class Home extends React.Component {
                     </div>
                 </div>
                 <hr />
+                <button onClick={this.props.greet} className="btn btn-default btn-lg">Greet Button</button>
+                <hr />
                 {this.props.children}
             </div>
         );
@@ -59,5 +61,6 @@ Home.propTypes = {
     user_age: PropTypes.number,
     user_job_title: PropTypes.string,
     user_hobbies: PropTypes.string,
-    children: PropTypes.element.isRequired
+    children: PropTypes.element.isRequired,
+    greet: PropTypes.func
 }
