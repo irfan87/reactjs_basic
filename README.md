@@ -1,4 +1,4 @@
-# reactjs_basic
+# REACTJS BASIC
 
 To use this tutorial, don't forget to install the packages from `package.json` by using `npm install` or `npm i`.
 
