@@ -23,6 +23,8 @@ export default class Home extends React.Component {
                         </ul>
                     </div>
                 </div>
+                <hr />
+                {this.props.children}
             </div>
         );
     }
@@ -32,5 +34,6 @@ Home.propTypes = {
     user_name: PropTypes.string,
     user_age: PropTypes.number,
     user_job_title: PropTypes.string,
-    user_hobbies: PropTypes.string
+    user_hobbies: PropTypes.string,
+    children: PropTypes.element.isRequired
 }

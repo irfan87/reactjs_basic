@@ -28,7 +28,9 @@ class App extends React.Component {
                             user_age={user_info.user_age}
                             user_job_title={user_info.user_job_title}
                             user_info={user_info}
-                        />
+                        >
+                            <p>This is the Home paragraph!</p>
+                        </Home>
                     </div>
                 </div>
             </div>
